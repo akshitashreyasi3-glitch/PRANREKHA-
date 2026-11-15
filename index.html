@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PRANREKHA | Every Signal Matters</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="app">
+
+<!-- SIDEBAR -->
+<aside class="sidebar">
+
+<div class="pr-logo">
+    <div class="pr-logo-graphic">
+        <div class="pr-logo-orbit"></div>
+        <div class="pr-logo-sparkle"></div>
+        <div class="pr-logo-helmet"></div>
+        <div class="pr-logo-ecg"></div>
+    </div>
+
+    <div class="pr-logo-text">
+        <div class="pr-logo-name">PRĀNREKHA</div>
+        <div class="pr-logo-divider"></div>
+        <div class="pr-logo-tagline">DECODING LIFE BEYOND EARTH</div>
+    </div>
+</div>
+
+<div class="side-label">MISSION SYSTEMS</div>
+
+<nav>
+    <button class="nav-btn active" data-page="home">
+        <span class="nav-icon">⌂</span> Mission Control
+    </button>
+
+    <button class="nav-btn" data-page="dashboard">
+        <span class="nav-icon">◈</span> Health Dashboard
+    </button>
+
+    <button class="nav-btn" data-page="entry">
+        <span class="nav-icon">＋</span> Health Data Entry
+    </button>
+
+    <button class="nav-btn" data-page="impact">
+        <span class="nav-icon">✧</span> Mission Impact Explorer
+    </button>
+
+    <button class="nav-btn" data-page="timeline">
+        <span class="nav-icon">◷</span> Timeline & Analytics
+    </button>
+
+    <button class="nav-btn" data-page="reports">
+        <span class="nav-icon">▤</span> Health Insights & Reports
+    </button>
+</nav>
+
+<div class="sidebar-bottom">
+    <div class="status">
+        <span class="status-dot"></span>
+        SYSTEM ONLINE
+    </div>
+    <p style="font-size:9px;color:#697899;margin:10px 0 0;">
+        PRANREKHA PROTOTYPE · 2026
+    </p>
+</div>
+
+</aside>
+
+<!-- MAIN CONTENT -->
+<main class="main">
+
+<header class="topbar">
+    <div>
+        <div class="eyebrow">SPACEFLIGHT HUMAN HEALTH MONITORING</div>
+        <h1 id="pageTitle">MISSION CONTROL</h1>
+    </div>
+
+    <div class="top-right">
+        <div class="live-badge">● SYSTEM ACTIVE</div>
+        <div class="avatar">P</div>
+    </div>
+</header>
+
+<!-- PAGE 1: HOME -->
+<section class="page active" id="home">
+
+    <div class="hero">
+        <div class="hero-content">
+
+            <div class="hero-tag">
+                RESEARCH-BACKED PROTOTYPE · SAMPLE DATA CLEARLY LABELLED
+            </div>
+
+            <h2>
+                EVERY SIGNAL<br>
+                <span>TELLS A STORY.</span>
+            </h2>
+
+            <p>
+                An integrated astronaut health monitoring and mission
+                analytics platform. Explore physiological measurements,
+                understand the impact of spaceflight and monitor health
+                trends across a mission.
+            </p>
+
+            <button class="primary-btn" onclick="showPage('dashboard')">
+                ENTER MISSION CONTROL ↗
+            </button>
+
+        </div>
+    </div>
+
+    <h3 class="section-title">
+        MISSION SNAPSHOT <span class="accent">/ ILLUSTRATIVE DATA</span>
+    </h3>
+
+    <div class="grid grid-3">
+
+        <div class="card metric-card" style="--metric:var(--cyan);--glow:var(--cyan)">
+            <div class="metric-top">HEART RATE <span>♡</span></div>
+            <div class="metric-value">72</div>
+            <div class="metric-unit">BPM · Sample reading</div>
+        </div>
+
+        <div class="card metric-card" style="--metric:var(--blue);--glow:var(--blue)">
+            <div class="metric-top">OXYGEN LEVEL <span>◉</span></div>
+            <div class="metric-value">98%</div>
+            <div class="metric-unit">SpO₂ · Sample reading</div>
+        </div>
+
+        <div class="card metric-card" style="--metric:var(--gold);--glow:var(--gold)">
+            <div class="metric-top">SLEEP DURATION <span>☾</span></div>
+            <div class="metric-value">7.5</div>
+            <div class="metric-unit">Hours · Sample reading</div>
+        </div>
+
+    </div>
+
+    <h3 class="section-title">EXPLORE THE PLATFORM</h3>
+
+    <div class="grid grid-3">
+
+        <div class="card">
+            <div style="font-size:25px;color:var(--cyan)">◈</div>
+            <h3 style="margin:12px 0 7px;font-size:14px">Health Monitoring</h3>
+            <p style="color:var(--muted);font-size:11px;line-height:1.7">
+                Record and visualise astronaut physiological measurements.
+            </p>
+        </div>
+
+        <div class="card">
+            <div style="font-size:25px;color:var(--purple)">✧</div>
+            <h3 style="margin:12px 0 7px;font-size:14px">Spaceflight Research</h3>
+            <p style="color:var(--muted);font-size:11px;line-height:1.7">
+                Explore how microgravity can affect different body systems.
+            </p>
+        </div>
+
+        <div class="card">
+            <div style="font-size:25px;color:var(--gold)">◷</div>
+            <h3 style="margin:12px 0 7px;font-size:14px">Mission Analytics</h3>
+            <p style="color:var(--muted);font-size:11px;line-height:1.7">
+                View historical records and changes across mission days.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- PAGE 2: DASHBOARD -->
+<section class="page" id="dashboard">
+
+    <div class="page-heading">
+        <div class="eyebrow">01 / PHYSIOLOGICAL OVERVIEW</div>
+        <h2>ASTRONAUT <span class="accent">HEALTH DASHBOARD</span></h2>
+        <p>Overview of the latest recorded health measurements.</p>
+    </div>
+
+    <div class="card" style="margin-bottom:20px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px">
+
+        <div>
+            <div class="eyebrow">MISSION PROFILE</div>
+            <h3 style="margin-top:8px">ASTRONAUT-01</h3>
+            <p style="color:var(--muted);font-size:11px;margin-top:5px">
+                Illustrative mission profile · Not a real astronaut
+            </p>
+        </div>
+
+        <div>
+            <div class="eyebrow">MISSION PHASE</div>
+            <h3 style="color:var(--gold);margin-top:8px">IN-FLIGHT</h3>
+        </div>
+
+        <div>
+            <div class="eyebrow">RECORDS AVAILABLE</div>
+            <h3 id="dashboardCount" style="margin-top:8px">3</h3>
+        </div>
+
+    </div>
+
+    <div class="grid grid-3">
+
+        <div class="card metric-card" style="--metric:var(--cyan);--glow:var(--cyan)">
+            <div class="metric-top">HEART RATE</div>
+            <div class="metric-value" id="dashHR">72</div>
+            <div class="metric-unit">BPM</div>
+        </div>
+
+        <div class="card metric-card" style="--metric:var(--blue);--glow:var(--blue)">
+            <div class="metric-top">OXYGEN SATURATION</div>
+            <div class="metric-value" id="dashO2">98</div>
+            <div class="metric-unit">SpO₂ %</div>
+        </div>
+
+        <div class="card metric-card" style="--metric:var(--gold);--glow:var(--gold)">
+            <div class="metric-top">BODY TEMPERATURE</div>
+            <div class="metric-value" id="dashTemp">36.8</div>
+            <div class="metric-unit">°C</div>
+        </div>
+
+        <div class="card metric-card" style="--metric:var(--pink);--glow:var(--pink)">
+            <div class="metric-top">SYSTOLIC PRESSURE</div>
+            <div class="metric-value" id="dashSys">118</div>
+            <div class="metric-unit">mmHg</div>
+        </div>
+
+        <div class="card metric-card" style="--metric:var(--purple);--glow:var(--purple)">
+            <div class="metric-top">SLEEP DURATION</div>
+            <div class="metric-value" id="dashSleep">7.5</div>
+            <div class="metric-unit">Hours</div>
+        </div>
+
+        <div class="card metric-card" style="--metric:var(--cyan);--glow:var(--cyan)">
+            <div class="metric-top">RESPIRATORY RATE</div>
+            <div class="metric-value" id="dashResp">16</div>
+            <div class="metric-unit">Breaths / min</div>
+        </div>
+
+    </div>
+
+    <div class="grid grid-2" style="margin-top:20px">
+
+        <div class="card">
+            <div class="eyebrow">CARDIOVASCULAR MONITORING</div>
+            <h3 style="margin:8px 0 15px">Heart Rate Trend</h3>
+            <div id="hrChart" class="chart"></div>
+        </div>
+
+        <div class="card">
+            <div class="eyebrow">SLEEP MONITORING</div>
+            <h3 style="margin:8px 0 15px">Sleep Duration Trend</h3>
+            <div id="sleepChart" class="chart"></div>
+        </div>
+
+    </div>
+
+    <div class="notice">
+        Dashboard values are based on the latest saved record.
+        They are descriptive measurements, not medical diagnoses.
+    </div>
+
+</section>
+
+<!-- PAGE 3: HEALTH DATA ENTRY -->
+<section class="page" id="entry">
+
+    <div class="page-heading">
+        <div class="eyebrow">02 / DATA ACQUISITION</div>
+        <h2>HEALTH DATA <span class="accent">ENTRY</span></h2>
+        <p>Record physiological observations across mission phases.</p>
+    </div>
+
+    <form id="healthForm">
+
+        <div class="card form-card">
+
+            <div class="form-section-title">MISSION IDENTIFICATION</div>
+
+            <div class="form-grid">
+
+                <div class="field">
+                    <label for="astronaut">Astronaut ID</label>
+                    <input type="text" id="astronaut" value="ASTRONAUT-01" required>
+                </div>
+
+                <div class="field">
+                    <label for="mission">Mission Name</label>
+                    <input type="text" id="mission" value="MISSION-01" required>
+                </div>
+
+                <div class="field">
+                    <label for="day">Mission Day</label>
+                    <input type="number" id="day" min="0" value="1" required>
+                </div>
+
+                <div class="field">
+                    <label for="date">Observation Date</label>
+                    <input type="date" id="date" required>
+                </div>
+
+                <div class="field">
+                    <label for="phase">Mission Phase</label>
+                    <select id="phase" required>
+                        <option value="Pre-flight">Pre-flight</option>
+                        <option value="In-flight" selected>In-flight</option>
+                        <option value="Post-flight">Post-flight</option>
+                    </select>
+                </div>
+
+            </div>
+
+            <div class="form-section-title">CARDIOVASCULAR & VITAL MEASUREMENTS</div>
+
+            <div class="form-grid">
+
+                <div class="field">
+                    <label for="hr">Heart Rate (BPM)</label>
+                    <input type="number" id="hr" min="1" max="250" step="1" value="72" required>
+                </div>
+
+                <div class="field">
+                    <label for="oxygen">Oxygen Saturation (%)</label>
+                    <input type="number" id="oxygen" min="1" max="100" step="0.1" value="98" required>
+                </div>
+
+                <div class="field">
+                    <label for="temp">Body Temperature (°C)</label>
+                    <input type="number" id="temp" min="25" max="45" step="0.1" value="36.8" required>
+                </div>
+
+                <div class="field">
+                    <label for="sys">Systolic Blood Pressure (mmHg)</label>
+                    <input type="number" id="sys" min="1" max="300" value="118" required>
+                </div>
+
+                <div class="field">
+                    <label for="dia">Diastolic Blood Pressure (mmHg)</label>
+                    <input type="number" id="dia" min="1" max="200" value="78" required>
+                </div>
+
+                <div class="field">
+                    <label for="resp">Respiratory Rate (breaths/min)</label>
+                    <input type="number" id="resp" min="1" max="100" value="16" required>
+                </div>
+
+            </div>
+
+            <div class="form-section-title">SLEEP & WELLBEING</div>
+
+            <div class="form-grid">
+
+                <div class="field">
+                    <label for="sleep">Sleep Duration (hours)</label>
+                    <input type="number" id="sleep" min="0" max="24" step="0.1" value="7.5" required>
+                </div>
+
+                <div class="field">
+                    <label for="sleepQuality">Sleep Quality</label>
+                    <select id="sleepQuality" required>
+                        <option value="Good">Good</option>
+                        <option value="Moderate">Moderate</option>
+                        <option value="Poor">Poor</option>
+                        <option value="Not recorded">Not recorded</option>
+                    </select>
+                </div>
+
+                <div class="field">
+                    <label for="fatigue">Fatigue Observation</label>
+                    <select id="fatigue" required>
+                        <option value="None reported">None reported</option>
+                        <option value="Mild">Mild</option>
+                        <option value="Moderate">Moderate</option>
+                        <option value="High">High</option>
+                        <option value="Not recorded">Not recorded</option>
+                    </select>
+                </div>
+
+            </div>
+
+            <div class="form-section-title">OPTIONAL REPRODUCTIVE HEALTH OBSERVATIONS</div>
+
+            <div class="form-grid">
+
+                <div class="field">
+                    <label for="menstrual">Menstrual Health Record</label>
+                    <select id="menstrual">
+                        <option value="Not recorded">Not recorded</option>
+                        <option value="Not applicable">Not applicable</option>
+                        <option value="Menstruation reported">Menstruation reported</option>
+                        <option value="No menstruation reported">No menstruation reported</option>
+                        <option value="Prefer not to disclose">Prefer not to disclose</option>
+                    </select>
+                </div>
+
+                <div class="field">
+                    <label for="cycleNotes">Optional Cycle Notes</label>
+                    <input type="text" id="cycleNotes" placeholder="Optional observation">
+                </div>
+
+            </div>
+
+            <div class="form-section-title">ADDITIONAL OBSERVATIONS</div>
+
+            <div class="field">
+                <label for="notes">Mission Notes</label>
+                <textarea id="notes" rows="4" placeholder="Enter any additional observations..."></textarea>
+            </div>
+
+            <button type="submit" class="primary-btn">
+                SAVE HEALTH RECORD ↗
+            </button>
+
+            <p id="formMessage" class="form-message" aria-live="polite"></p>
+
+        </div>
+
+    </form>
+
+    <div class="notice">
+        Reproductive-health fields are optional. This prototype stores
+        records locally in the browser and does not transmit them to NASA
+        or any external service.
+    </div>
+
+</section>
+
+<!-- PAGE 4: IMPACT EXPLORER -->
+<section class="page" id="impact">
+
+    <div class="page-heading">
+        <div class="eyebrow">03 / SPACEFLIGHT PHYSIOLOGY</div>
+        <h2>MISSION IMPACT <span class="accent">EXPLORER</span></h2>
+        <p>
+            Explore physiological systems studied during human spaceflight
+            and the effects associated with microgravity and mission conditions.
+        </p>
+    </div>
+
+    <div class="impact-grid">
+
+        <button class="card impact-card" onclick="impactInfo('cardio', this)">
+            <div class="impact-icon">♡</div>
+            <h3>CARDIOVASCULAR SYSTEM</h3>
+            <p>Heart function and circulation</p>
+        </button>
+
+        <button class="card impact-card" onclick="impactInfo('sleep', this)">
+            <div class="impact-icon">☾</div>
+            <h3>SLEEP & CIRCADIAN RHYTHM</h3>
+            <p>Sleep patterns and biological timing</p>
+        </button>
+
+        <button class="card impact-card" onclick="impactInfo('bone', this)">
+            <div class="impact-icon">◇</div>
+            <h3>BONE & MUSCLE SYSTEM</h3>
+            <p>Musculoskeletal adaptation</p>
+        </button>
+
+        <button class="card impact-card" onclick="impactInfo('fluid', this)">
+            <div class="impact-icon">◉</div>
+            <h3>BODY FLUID DISTRIBUTION</h3>
+            <p>Fluid shifts and hydration</p>
+        </button>
+
+        <button class="card impact-card" onclick="impactInfo('mental', this)">
+            <div class="impact-icon">✧</div>
+            <h3>MENTAL & BEHAVIOURAL HEALTH</h3>
+            <p>Cognition and crew wellbeing</p>
+        </button>
+
+        <button class="card impact-card" onclick="impactInfo('reproductive', this)">
+            <div class="impact-icon">✿</div>
+            <h3>REPRODUCTIVE & MENSTRUAL HEALTH</h3>
+            <p>Inclusive spaceflight research</p>
+        </button>
+
+    </div>
+
+    <div class="card impact-detail" id="impactDetail">
+        <div class="eyebrow">SELECT A PHYSIOLOGICAL SYSTEM</div>
+        <h3 style="margin-top:12px">Explore the science behind spaceflight health.</h3>
+        <p style="color:var(--muted);font-size:12px;line-height:1.8;margin-top:10px">
+            Select any research area above to explore its scientific overview,
+            physiological mechanisms, measurement methods and relevance to PRANREKHA.
+        </p>
+    </div>
+
+</section>
+
+<!-- PAGE 5: TIMELINE -->
+<section class="page" id="timeline">
+
+    <div class="page-heading">
+        <div class="eyebrow">04 / LONGITUDINAL MONITORING</div>
+        <h2>MISSION TIMELINE <span class="accent">& ANALYTICS</span></h2>
+        <p>Explore recorded measurements across mission days.</p>
+    </div>
+
+    <div class="card">
+
+        <div class="eyebrow">TREND VISUALISATION</div>
+
+        <div class="field" style="max-width:280px;margin-top:12px">
+            <label for="chartMetric">Select measurement</label>
+            <select id="chartMetric" onchange="renderTimelineChart()">
+                <option value="hr">Heart Rate</option>
+                <option value="oxygen">Oxygen Saturation</option>
+                <option value="sleep">Sleep Duration</option>
+                <option value="temp">Body Temperature</option>
+            </select>
+        </div>
+
+        <div id="timelineChart" class="chart" style="margin-top:20px"></div>
+
+    </div>
+
+    <div class="card" style="margin-top:20px">
+
+        <div class="eyebrow">MISSION RECORD ARCHIVE</div>
+        <h3 style="margin:10px 0 18px">Recorded Health Observations</h3>
+
+        <div class="table-wrap">
+            <table>
+                <thead>
+                    <tr>
+                        <th>MISSION DAY</th>
+                        <th>DATE</th>
+                        <th>PHASE</th>
+                        <th>HEART RATE</th>
+                        <th>OXYGEN</th>
+                        <th>SLEEP</th>
+                    </tr>
+                </thead>
+                <tbody id="timelineRecords"></tbody>
+            </table>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- PAGE 6: REPORTS -->
+<section class="page" id="reports">
+
+    <div class="page-heading">
+        <div class="eyebrow">05 / HEALTH INTELLIGENCE</div>
+        <h2>HEALTH INSIGHTS <span class="accent">& REPORTS</span></h2>
+        <p>Summaries based on the measurements entered into this prototype.</p>
+    </div>
+
+    <div class="grid grid-3">
+
+        <div class="card report-card">
+            <div class="eyebrow">TOTAL RECORDS</div>
+            <div class="report-number" id="totalRecords">3</div>
+            <p>Saved health observations</p>
+        </div>
+
+        <div class="card report-card">
+            <div class="eyebrow">AVERAGE HEART RATE</div>
+            <div class="report-number" id="avgHR">72</div>
+            <p>BPM across saved records</p>
+        </div>
+
+        <div class="card report-card">
+            <div class="eyebrow">AVERAGE OXYGEN</div>
+            <div class="report-number" id="avgO2">98%</div>
+            <p>SpO₂ across saved records</p>
+        </div>
+
+        <div class="card report-card">
+            <div class="eyebrow">AVERAGE SLEEP</div>
+            <div class="report-number" id="avgSleep">7.5</div>
+            <p>Hours across saved records</p>
+        </div>
+
+        <div class="card report-card">
+            <div class="eyebrow">AVERAGE TEMPERATURE</div>
+            <div class="report-number" id="avgTemp">36.8</div>
+            <p>°C across saved records</p>
+        </div>
+
+    </div>
+
+    <div class="card" style="margin-top:20px">
+
+        <h3 style="font-size:14px;margin-bottom:10px">GENERATE MISSION REPORT</h3>
+
+        <p style="color:var(--muted);font-size:11px;line-height:1.7">
+            Export your saved records as a CSV spreadsheet or a text summary.
+        </p>
+
+        <button class="primary-btn" onclick="downloadCSV()">
+            DOWNLOAD CSV ↗
+        </button>
+
+        <button class="secondary-btn" onclick="downloadReport()" style="margin:25px 0 0 8px">
+            DOWNLOAD REPORT ↗
+        </button>
+
+    </div>
+
+    <div class="notice">
+        IMPORTANT: These statistics are descriptive summaries of entered
+        measurements. They are not medical assessments, clinical health scores,
+        diagnoses or proof that spaceflight caused a change.
+    </div>
+
+</section>
+
+<footer>
+    PRANREKHA · EVERY SIGNAL MATTERS · SPACEFLIGHT HUMAN HEALTH MONITORING
+    <br><br>
+    Research-informed student prototype · Illustrative data clearly labelled
+</footer>
+
+</main>
+</div>
+
+<script src="script.js" defer></script>
+
+</body>
+</html>
